@@ -23,7 +23,7 @@ export function SignIn() {
   }
 
   return (
-    <div className="w-screen h-screen bg-gray-900 flex flex-col items-center justify-center text-gray-100">
+    <div className="w-screen h-screen-300 bg-gray-900 flex flex-col items-center justify-center text-gray-100">
       <header className="flex flex-col items-center">
         <Logo />
 
@@ -36,7 +36,7 @@ export function SignIn() {
         </Text>
       </header>
 
-      <form onSubmit={handleSignIn} className="flex flex-col gap-4 items-stretch w-full max-w-sm mt-10">
+      <form onSubmit={handleSignIn} className="flex flex-col gap-4 items-stretch w-full max-w-md mt-10">
         { isUserSignedIn && <Text>Login realizado!</Text> }
 
         <label htmlFor="email" className="flex flex-col gap-3">
